@@ -8,8 +8,8 @@ class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    const blogPath = `${__PATH_PREFIX__}/blog/`
-    let header
+    const blogPath = `${__PATH_PREFIX__}/`
+    let header, splitTitle = title.split(" ");
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
       header = (
@@ -24,11 +24,11 @@ class Layout extends React.Component {
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`,
+              color: `#807569`,
             }}
-            to={location.pathname === blogPath ? `/blog/` : `/`}
+            to={location.pathname === blogPath ? `/` : `/`}
           >
-            {title}
+            {splitTitle[0]+" "+splitTitle[1]+" "}<span style={{color:'#EA9E44'}}>{splitTitle[2]}</span>
           </Link>
         </h1>
       )
@@ -46,7 +46,7 @@ class Layout extends React.Component {
               textDecoration: `none`,
               color: `inherit`,
             }}
-            to={`/blog/`}
+            to={`/`}
           >
             {title}
           </Link>

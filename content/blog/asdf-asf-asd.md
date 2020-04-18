@@ -5,3 +5,7 @@ title: asdf asf asd
 description: asdfg sdgs dfg
 ---
  sadgsg sg sdgsd gsdag asgsd gsf
+
+![abc](assets/day1.png "adf ")
+
+\#fsd fsdfsd sdf sd

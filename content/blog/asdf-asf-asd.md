@@ -1,11 +1,7 @@
 ---
-path: Hello-world
+path: hello-world
 date: 2020-04-18T07:54:42.888Z
-title: asdf asf asd
-description: asdfg sdgs dfg
+title: Hello World!
+description: Let's get started !!
 ---
- sadgsg sg sdgsd gsdag asgsd gsf
-
-![abc](assets/day1.png "adf ")
-
-\#fsd fsdfsd sdf sd
+# This is a set post !!
